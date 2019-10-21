@@ -9,6 +9,15 @@
       <link rel="stylesheet" type="text/css" href="mainstyle.css">
 </head>
 <body>
+  <div class="dropdown">
+    <button class="dropbtn">About Us</button>
+    <div class="dropdown-content">
+      <a href="https://jakestewart16.github.io">Jake Stewart</a>
+      <a href="https://TimothyMichalec.github.io">Blake Michalec</a>
+      <a href="https://rts56.github.io">Robbie Starke</a>
+    </div>
+  </div>
+
     <div id="map"></div>
 
     <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"integrity=
@@ -16,5 +25,17 @@
     crossorigin=>
     </script>
     <script src = 'external.js'> </script>
+
+    <div id="map"></div>
+
+    <script src ="external.js"></script>
+
+    <script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>
+    <script>
+    var point1 = turf.point([29.8833, 97.9414]);
+    var point2 = turf.point([29.9833, 97.8414]);
+
+    var bearing = turf.bearing(point1, point2);
+    </script>
 </body>
 </html>
