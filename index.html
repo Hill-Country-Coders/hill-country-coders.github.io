@@ -46,5 +46,12 @@
     var addToMap = [along, line];
     L.geoJson(line).addTo(map);
     </script>
+    <script>
+    var center = [29.882080, -97.939987];
+    var radius = 5;
+    var options = {steps: 10, units: 'miles', properties: {foo: 'bar'}};
+    var circle = turf.circle(center, radius,options);
+    L.geoJson(circle).addTo(map);
+    </script>
 </body>
 </html>
