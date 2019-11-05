@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Full Screen Leaflet Map</title>
-    <meta charset="utf-8" />
+    <title>The Square - San Marcos, Texas</title>
+
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
     integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
     crossorigin=""/>
-      <link rel="stylesheet" type="text/css" href="mainstyle.css">
+    <link rel="stylesheet" type="text/css" href="mainstyle.css">
 </head>
 <body>
   <div class="dropdown">
@@ -18,40 +18,15 @@
     </div>
   </div>
 
-    <div id="map"></div>
+  <div id="map"></div>
 
-    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"integrity=
+  <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"integrity=
     "sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
     crossorigin=>
-    </script>
-    <script src = 'external.js'> </script>
+  </script>
+  <script src = 'external.js'> </script>
 
-    <div id="map"></div>
+  <div id="map"></div>
 
-    <script src ="external.js"></script>
-
-    <script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>
-    <script>
-    var point1 = turf.point([29.8833, 97.9414]);
-    var point2 = turf.point([29.9833, 97.8414]);
-
-    var bearing = turf.bearing(point1, point2);
-
-    var line = turf.lineString([[-98, 29], [-97.9384, 29.8885], [-78, 41]]);
-    var options = {units: 'miles'};
-
-    var along = turf.along(line, 200, options);
-
-    //addToMap
-    var addToMap = [along, line];
-    L.geoJson(line).addTo(map);
-    </script>
-    <script>
-    var center = [29.882080, -97.939987];
-    var radius = 5;
-    var options = {steps: 10, units: 'miles', properties: {foo: 'bar'}};
-    var circle = turf.circle(center, radius,options);
-    L.geoJson(circle).addTo(map);
-    </script>
 </body>
 </html>
