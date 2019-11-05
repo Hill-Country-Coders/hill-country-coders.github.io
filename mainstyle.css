@@ -6,6 +6,35 @@ html, body, #map {
     height: 100%;
     width: 100%;
   }
+  body {
+    background-color: #92c5de;
+    color: #0571b0;
+    text-align: center;
+  }
+  #Header {
+    background-color: #0571b0;
+  }
+  h1{
+    padding: 5px;
+    margin: 0;
+  }
+  h1{
+    color: #f7f7f7;
+  }
+  #body-container {
+    background-color: f7f7f7;
+    max-width: 1000px;
+    margin: auto;
+      border: 2px solid #f7f7f7;
+    border-radius: 25px;
+    overflow: hidden;
+  }
+  body {
+    background-color: #92c5de
+    color: #0571b0
+    text-align: center;
+    margin: 0;
+  }
   .dropdown {
     position: relative;
     display: inline-block;
