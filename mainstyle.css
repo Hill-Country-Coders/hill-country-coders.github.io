@@ -7,7 +7,7 @@ html, body, #map {
     width: 100%;
   }
   body {
-    background-color: #92c5de;
+    background-color: #501214;
     color: #0571b0;
     text-align: center;
   }
@@ -19,7 +19,7 @@ html, body, #map {
     margin: 0;
   }
   h1{
-    color: #f7f7f7;
+    color: #8d734a;
   }
   #body-container {
     background-color: f7f7f7;
