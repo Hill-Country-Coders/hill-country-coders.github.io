@@ -2,27 +2,55 @@
 <html>
 <head>
     <title>The Square - San Marcos, Texas</title>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
-    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-    crossorigin=""/>
-    <link rel="stylesheet" type="text/css" href="mainstyle.css">
+    <style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 175px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #501214;
+  overflow-x: hidden;
+  padding-top: 175px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #8d734a;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
 </head>
 <body>
-    <div class="dropdown">
-      <button class="dropbtn">About Us</button>
-      <div class="dropdown-content">
-        <a href="https://jakestewart16.github.io">Jake Stewart</a>
-        <a href="https://TimothyMichalec.github.io">Blake Michalec</a>
-        <a href="https://rts56.github.io">Robbie Starke</a>
-      </div>
-    </div>
 
-    <div id="map"></div>
+<div class="sidenav">
+  <a href="">About</a>
+  <a href="#services">Map</a>
+  <a href="#clients">Bar Info</a>
+  <a href="#contact">Credits</a>
+</div>
 
-    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"integrity=
-    "sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
-    crossorigin="">
-    </script>
 </body>
 </html>
