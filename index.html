@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-    <title>Full Screen Leaflet Map</title>
+    <title>The Square - San Marcos, Texas</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
     integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
@@ -10,7 +9,6 @@
     <link rel="stylesheet" type="text/css" href="mainstyle.css">
 </head>
 <body>
-
     <div class="dropdown">
       <button class="dropbtn">About Us</button>
       <div class="dropdown-content">
@@ -26,16 +24,5 @@
     "sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
     crossorigin="">
     </script>
-
-    <script src ="external.js"></script>
-
-    <script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>
-    <script>
-    var point1 = turf.point([29.8833, 97.9414]);
-    var point2 = turf.point([29.9833, 97.8414]);
-
-    var bearing = turf.bearing(point1, point2);
-    </script>
-
 </body>
 </html>
