@@ -47,16 +47,27 @@
     </style>
 </head>
 <body>
+  <script>
+    function ageVerify(age) {
+      var age = window.prompt("YOU MUST BE 21 YEARS OR OLDER TO ENTER", "Please enter your age");
+      if (age < 21) {
+        location.href = ("https://coolmathgames.com");
+      }
+    }
+  </script>
+  <script>
+  ageVerify()
+  </script>
   <div id="body-container">
       <h1>The Square - San Marcos</h1>
   </div>
       <div id="map"></div>
 
   <div class="sidenav">
-    <a href="https://index.html">Home</a>
+    <a href="https://hill-country-coders.github.io/index.html">Home</a>
     <a href="">Map</a>
     <a href="">Bar Info</a>
-    <a href="https://about.html">About</a>
+    <a href="https://hill-country-coders.github.io/about.html">About</a>
   </div>
 
 </body>
