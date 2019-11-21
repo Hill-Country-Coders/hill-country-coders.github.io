@@ -1,0 +1,61 @@
+#header {
+  background-color: #501214;
+}
+
+* {
+  box-sizing: border-box;
+}
+h1 {
+  color: #f7f7f7;
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+  font-size: 85px;
+}
+h2 {
+  text-align: center;
+  font-size: 50px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+#blackrabbit {
+  font-size: 40px;
+  text-align: center;
+}
+#chances {
+  font-size: 40px;
+  text-align: center;
+}
+#chimys {
+  font-size: 40px;
+  text-align: center;
+}
+#crafthouse {
+  font-size: 40px;
+  text-align: center;
+}
+#greenparrot {
+  font-size: 40px;
+  text-align: center;
+}
+#harpers {
+  font-size: 40px;
+  text-align: center;
+}
+#louies {
+  font-size: 40px;
+  text-align: center;
+}
+#mayloos {
+  font-size: 40px;
+  text-align: center;
+}
+#nephews {
+  font-size: 40px;
+  text-align: center;
+}
