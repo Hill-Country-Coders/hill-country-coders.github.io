@@ -11,7 +11,7 @@
 
     .sidenav {
       height: 100%;
-      width: 200px;
+      width: 230px;
       position: fixed;
       z-index: 1;
       top: 0;
@@ -45,7 +45,7 @@
     }
     #header {
       text-align: center;
-      font-size: 30px;
+      font-size: 75px;
     }
     </style>
     <meta charset="utf-8" />
@@ -70,8 +70,8 @@
         var view = new MapView({
           container: "viewDiv", // Reference to the scene div created in step 5
           map: map, // Reference to the map object created before the scene
-          zoom: 4, // Sets zoom level based on level of detail (LOD)
-          center: [15, 65] // Sets center point of view using longitude,latitude
+          zoom: 18, // Sets zoom level based on level of detail (LOD)
+          center: [-97.940714, 29.882739] // Sets center point of view using longitude,latitude
         });
       });
     </script>
@@ -88,8 +88,7 @@
   <script>
   ageVerify()
   </script>
-  <div id="header">
-      <h1>The Square - San Marcos</h1></div>
+  <div id="header">The Square - San Marcos</div>
   <div id="viewDiv"></div>
   <div class="sidenav">
     <a href="https://hill-country-coders.github.io/index.html">Home</a>
