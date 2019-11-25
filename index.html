@@ -2,7 +2,15 @@
 <html>
 <head>
     <title>The Square - San Marcos, Texas</title>
-
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+    integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+    crossorigin="">
+    </script>
     <style>
     /*this is for the sidebar*/
     body {
@@ -46,38 +54,8 @@
     #header {
       text-align: center;
       font-size: 75px;
-      background: #501214;
-      color: #f7f7f7
-    }
     }
     </style>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
-    <style>
-      html,
-      body,
-      #viewDiv {
-        padding: 0;
-        margin: 0;
-        height: 100%;
-        width: 100%;
-      }
-    </style>
-    <link rel="stylesheet" href="https://js.arcgis.com/4.13/esri/themes/light/main.css" />
-    <script src="https://js.arcgis.com/4.13/"></script>
-    <script>
-      require(["esri/Map", "esri/views/MapView"], function(Map, MapView) {
-        var map = new Map({
-          basemap: "streets"
-        });
-        var view = new MapView({
-          container: "viewDiv", // Reference to the scene div created in step 5
-          map: map, // Reference to the map object created before the scene
-          zoom: 18, // Sets zoom level based on level of detail (LOD)
-          center: [-97.940714, 29.882739] // Sets center point of view using longitude,latitude
-        });
-      });
-    </script>
 </head>
 <body>
   <script>
@@ -92,7 +70,16 @@
   ageVerify()
   </script>
   <div id="header">The Square - San Marcos</div>
-  <div id="viewDiv"></div>
+  <div id="map" style="width: 1400px; height: 1000px; margin: auto;">
+    <script>
+    var map = L.map('map').setView([29.882739, -97.940714], 15);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
+      maxZoom: 18,
+      id: 'mapbox.mapbox-traffic-v1',
+      accessToken: 'pk.eyJ1IjoicnRzNTYiLCJhIjoiY2sxaDM3MjhhMTJiMDNibjFmYTUzcXZrciJ9.MsF4SJOKCqoEVT2a9UDFpg'
+    }).addTo(map);
+    </script>
+  </div>
   <div class="sidenav">
     <a href="https://hill-country-coders.github.io/index.html">Home</a>
     <a href="https://hill-country-coders.github.io/barinfo.html">Bar Info</a>
