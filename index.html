@@ -15,22 +15,28 @@
     /*this is for the sidebar*/
     body {
       font-family: "Lato", sans-serif;
+      margin: 0;
+      padding: 0;
     }
-
+    #map {
+      position: absolute;
+      top: 100px;
+      left: 230px;
+      height: calc(100vh - 100px);
+      width: calc(100vw - 230px);
+    }
     .sidenav {
-      height: 100%;
+      height: calc(100vh - 100px);
       width: 230px;
-      position: fixed;
+      position: absolute;
+      top: 100px;
       z-index: 1;
-      top: 0;
       left: 0;
       background-color: #501214;
       overflow-x: hidden;
-      padding-top: 175px;
     }
 
     .sidenav a {
-      padding: 6px 8px 6px 16px;
       text-decoration: none;
       font-size: 40px;
       color: #f7f7f7;
@@ -42,20 +48,17 @@
     }
 
     .main {
-      margin-left: 160px;
       font-size: 28px;
-      padding: 0px 30px;
     }
 
-    @media screen and (max-height: 450px) {
-      .sidenav {padding-top: 15px;}
-      .sidenav a {font-size: 18px;}
-    }
     #header {
+      position: absolute;
       font-family: Trebuchet, sans-serif;
       font-variant: small-caps;
       text-align: center;
       font-size: 75px;
+      height: 100px;
+      width: 100vw;
     }
     </style>
 </head>
@@ -71,13 +74,13 @@
   <script>
   ageVerify()
   </script>
-  <div id="header" style="position:relative;left:160px">The Square - San Marcos</div>
+  <div id="header">The Square - San Marcos</div>
   <div class="sidenav">
     <a href="https://hill-country-coders.github.io/index.html">Home</a>
     <a href="https://hill-country-coders.github.io/barinfo.html">Bar Info</a>
     <a href="https://hill-country-coders.github.io/about.html">About Us</a>
   </div>
-  <div id="map" style="width: 1450px; height: 850px; margin: auto;">
+  <div id="map">
     <script>
     var map = L.map('map').setView([29.882739, -97.940714], 20);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
