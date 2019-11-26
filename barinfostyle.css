@@ -1,0 +1,137 @@
+#header {
+  background-color: #501214;
+}
+
+* {
+  box-sizing: border-box;
+}
+h1 {
+  color: #f7f7f7;
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+  font-size: 85px;
+}
+h2 {
+  text-align: center;
+  font-size: 50px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+#blackrabbit {
+  font-size: 40px;
+  text-align: center;
+}
+#chances {
+  font-size: 40px;
+  text-align: center;
+}
+#chimys {
+  font-size: 40px;
+  text-align: center;
+}
+#crafthouse {
+  font-size: 40px;
+  text-align: center;
+}
+#greenparrot {
+  font-size: 40px;
+  text-align: center;
+}
+#harpers {
+  font-size: 40px;
+  text-align: center;
+}
+#louies {
+  font-size: 40px;
+  text-align: center;
+}
+#mayloos {
+  font-size: 40px;
+  text-align: center;
+}
+#nephews {
+  font-size: 40px;
+  text-align: center;
+}
+#rooftop {
+  font-size: 40px;
+  text-align: center;
+}
+#seanpatricks {
+  font-size: 40px;
+  text-align: center;
+}
+#shade{
+  font-size: 40px;
+  text-align: center;
+}
+#taproom {
+  font-size: 40px;
+  text-align: center;
+}
+#themarc {
+  font-size: 40px;
+  text-align: center;
+}
+#theporch {
+  font-size: 40px;
+  text-align: center;
+}
+#thevault {
+  font-size: 40px;
+  text-align: center;
+}
+#vodkast {
+  font-size: 40px;
+  text-align: center;
+}
+/*this is for the sidebar*/
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #501214;
+  overflow-x: hidden;
+  padding-top: 175px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 40px;
+  color: #f7f7f7;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #8d734a;
+}
+
+.main {
+  margin-left: 160px;
+  font-size: 28px;
+  padding: 0px 30px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+#header {
+  text-align: center;
+  font-size: 30px;
+}
