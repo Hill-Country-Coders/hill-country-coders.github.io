@@ -88,6 +88,16 @@
       id: 'mapbox.mapbox-traffic-v1',
       accessToken: 'pk.eyJ1IjoicnRzNTYiLCJhIjoiY2sxaDM3MjhhMTJiMDNibjFmYTUzcXZrciJ9.MsF4SJOKCqoEVT2a9UDFpg'
     }).addTo(map);
+    var daSquare = L.polygon([
+      [29.883052, -97.941433],
+      [29.882177, -97.941280],
+      [29.882337, -97.940024],
+      [29.883194, -97.940169]
+    ], {
+      color: '#501214',
+      fillColor: '#501214',
+      fillOpacity: 0.25
+    }).addTo(map);
     var harpers = L.marker([29.883368, -97.940480]).addTo(map);
     var crafthouse = L.marker([29.884243, -97.940142]).addTo(map);
     var greenparrot = L.marker([29.882796, -97.939906]).addTo(map);
