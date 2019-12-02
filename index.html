@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+
     <title>The Square - San Marcos, Texas</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -64,6 +65,7 @@
 </head>
 <body>
   <script>
+  //This creates a popup verifying the users age
     function ageVerify(age) {
       var age = window.prompt("YOU MUST BE 21 YEARS OR OLDER TO ENTER", "Please enter your age");
       if (age < 21) {
@@ -72,6 +74,7 @@
     }
   </script>
   <script>
+  //Calls the function
   ageVerify()
   </script>
   <div id="header">The Square - San Marcos</div>
@@ -82,12 +85,14 @@
   </div>
   <div id="map">
     <script>
+    //Adds the map to the homepage
     var map = L.map('map').setView([29.882739, -97.940714], 17);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
       maxZoom: 18,
       id: 'mapbox.mapbox-traffic-v1',
       accessToken: 'pk.eyJ1IjoicnRzNTYiLCJhIjoiY2sxaDM3MjhhMTJiMDNibjFmYTUzcXZrciJ9.MsF4SJOKCqoEVT2a9UDFpg'
     }).addTo(map);
+    //The following lines add markers on the intended bars
     var harpers = L.marker([29.883368, -97.940480]).addTo(map);
     var crafthouse = L.marker([29.884243, -97.940142]).addTo(map);
     var greenparrot = L.marker([29.882796, -97.939906]).addTo(map);
@@ -105,6 +110,7 @@
     var SeanPatricks = L.marker([29.881976, -97.939820]).addTo(map);
     var Taproom = L.marker([29.883286, -97.940621]).addTo(map);
     var Nephews = L.marker([29.882319, -97.941505]).addTo(map);
+    //The following lines create popups for the intended bars
     crafthouse.bindPopup("<b>Crafthouse</b><br>242 N LBJ<br>11AM-12AM<br>(512) 667-6700<br>8 minute walk from campus").openPopup();
     greenparrot.bindPopup("<b>Green Parrot</b><br>124 N LBJ<br>5PM-2AM<br>(512) 396-4259<br>10 minute walk from campus").openPopup();
     rooftop.bindPopup("<b>Rooftop</b><br>126 S Guadalupe<br>10PM-2AM<br>(512) 910-5720<br>12 minute walk from campus").openPopup();
