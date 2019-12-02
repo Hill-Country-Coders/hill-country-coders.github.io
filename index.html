@@ -13,7 +13,7 @@
     crossorigin="">
     </script>
     <style>
-    /*this is for the sidebar*/
+
     body {
       font-family: "Lato", sans-serif;
       margin: 0;
@@ -108,7 +108,7 @@
         [29.887395, -97.942280],
         [29.882949, -97.941444],
       ];
-    }).addTo(map);
+      var polyline = L.polyline(polylinePoints).addTo(map);
     var harpers = L.marker([29.883368, -97.940480]).addTo(map);
     var crafthouse = L.marker([29.884243, -97.940142]).addTo(map);
     var greenparrot = L.marker([29.882796, -97.939906]).addTo(map);
