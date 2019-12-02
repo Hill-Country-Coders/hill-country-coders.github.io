@@ -102,6 +102,13 @@
       fillColor: '#501214',
       fillOpacity: 0.25
     }).addTo(map);
+    var polylinePoints = [
+        [29.888889, -97.942853],
+        [29.888819, -97.942510],
+        [29.887395, -97.942280],
+        [29.882949, -97.941444],
+      ];
+      var polyline = L.polyline(polylinePoints).addTo(map);
     var harpers = L.marker([29.883368, -97.940480]).addTo(map);
     var crafthouse = L.marker([29.884243, -97.940142]).addTo(map);
     var greenparrot = L.marker([29.882796, -97.939906]).addTo(map);
@@ -139,7 +146,5 @@
     Nephews.bindPopup("<b>Nephews</b><br>100 N Guadalupe St<br>Mon&Wed CLOSED Tues, Thurs-Sat 8PM–2AM<br>(512) 558-2337<br>9 minute walk from campus").openPopup();
   </script>
   </div>
-
-
 </body>
 </html>
