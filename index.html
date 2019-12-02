@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+
     <title>The Square - San Marcos, Texas</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -64,6 +65,7 @@
 </head>
 <body>
   <script>
+  //This creates a popup verifying the users age
     function ageVerify(age) {
       var age = window.prompt("YOU MUST BE 21 YEARS OR OLDER TO ENTER", "Please enter your age");
       if (age < 21) {
@@ -72,6 +74,7 @@
     }
   </script>
   <script>
+  //Calls the function
   ageVerify()
   </script>
   <div id="header">The Square - San Marcos</div>
@@ -82,7 +85,8 @@
   </div>
   <div id="map">
     <script>
-    var map = L.map('map').setView([29.882739, -97.940714], 20);
+    //Adds the map to the homepage
+    var map = L.map('map').setView([29.882739, -97.940714], 17);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
       maxZoom: 18,
       id: 'mapbox.mapbox-traffic-v1',
@@ -115,15 +119,22 @@
     var SeanPatricks = L.marker([29.881976, -97.939820]).addTo(map);
     var Taproom = L.marker([29.883286, -97.940621]).addTo(map);
     var Nephews = L.marker([29.882319, -97.941505]).addTo(map);
+    //The following lines create popups for the intended bars
     crafthouse.bindPopup("<b>Crafthouse</b><br>242 N LBJ<br>11AM-12AM<br>(512) 667-6700<br>8 minute walk from campus").openPopup();
     greenparrot.bindPopup("<b>Green Parrot</b><br>124 N LBJ<br>5PM-2AM<br>(512) 396-4259<br>10 minute walk from campus").openPopup();
     rooftop.bindPopup("<b>Rooftop</b><br>126 S Guadalupe<br>10PM-2AM<br>(512) 910-5720<br>12 minute walk from campus").openPopup();
     chances.bindPopup("<b>Chances R</b><br>138 S LBJ<br>3PM-2AM<br>(512) 392-1727<br>12 minute walk from campus").openPopup();
     harpers.bindPopup("<b>Harpers/Veranda</b><br>139 E Hopkins<br>4PM-2AM<br>(512) 878-2448<br>9 minute walk from campus").openPopup();
-    ThePorch.bindPopup("<b>ThePorch</b><br>129 E Hopkins<br>12PM–2AMM<br>(512) 878-8850<br>9 minute walk from campus").openPopup();
+    chimys.bindPopup("<b>Chimys</b><br>217 E Hopkins<br>11AM-Midnight<br>(512) 216-6175<br>8 minute walk from campus").openPopup();
+    mayloos.bindPopup("<b>Mayloos</b><br>138 N LBJ<br>4PM-2AM<br>(512) 393-3418<br>9 minute walk from campus").openPopup();
+    vodkast.bindPopup("<b>Vodka Street</b><br>202 N LBJ<br>8PM-2AM<br>(512) 396-4260<br>7 minute walk from campus").openPopup();
+    louies.bindPopup("<b>Louies Beer Garden</b><br>119 E Huchison<br>12PM-Midnight<br>(512) 878-8862<br>6 minute walk from campus").openPopup();
+    thevault.bindPopup("<b>The Vault</b><br>100 W Hopkins<br>7PM-2AM<br>6 minute walk from campus").openPopup();
+    themarc.bindPopup("<b>The Marc</b><br>120 E San Antonio<br>10PM-2AM <b>Closed Sun/Mon</b><br>(512) 757-5443<br>11 minute walk from campus").openPopup();
+    ThePorch.bindPopup("<b>The Porch</b><br>129 E Hopkins<br>12PM–2AMM<br>(512) 878-8850<br>9 minute walk from campus").openPopup();
     Shade.bindPopup("<b>Shade</b><br>127 E Hopkins<br>Monday-Saturday 5PM–2AM Sunday 2PM–2AM<br>(866) 620-6667<br>9 minute walk from campus").openPopup();
-    BlackRabbitSaloon.bindPopup("<b>BlackRabbitSaloon</b><br>127 E Hopkins St<br>5PM-2AM<br>(866) 620-6667<br>9 minute walk from campus").openPopup();
-    SeanPatricks.bindPopup("<b>SeanPatricks</b><br>202 E San Antonio St<br>Mon-Wed 11AM–12AM Thurs-Sat 11AM-1AM Sun 11AM-10PM<br>(512) 392-7310<br>9 minute walk from campus").openPopup();
+    BlackRabbitSaloon.bindPopup("<b>Black Rabbit Saloon</b><br>127 E Hopkins St<br>5PM-2AM<br>(866) 620-6667<br>9 minute walk from campus").openPopup();
+    SeanPatricks.bindPopup("<b>Sean Patricks</b><br>202 E San Antonio St<br>Mon-Wed 11AM–12AM Thurs-Sat 11AM-1AM Sun 11AM-10PM<br>(512) 392-7310<br>12 minute walk from campus").openPopup();
     Taproom.bindPopup("<b>Taproom</b><br>129 E Hopkins St<br>Sun-Wed 11:30AM–12AM Thurs-Sat 11:30AM–1AM<br>(512) 392-9824<br>9 minute walk from campus").openPopup();
     Nephews.bindPopup("<b>Nephews</b><br>100 N Guadalupe St<br>Mon&Wed CLOSED Tues, Thurs-Sat 8PM–2AM<br>(512) 558-2337<br>9 minute walk from campus").openPopup();
   </script>
